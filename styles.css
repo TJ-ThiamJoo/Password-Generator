@@ -1,0 +1,75 @@
+body {
+  align-items: center;
+  background-color: #0c2d48;
+  color: white;
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.container {
+  align-items: center;
+  background-color: #145da0;
+  border-radius: 1rem;
+  border: 2px solid #318fdd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.form {
+  column-gap: 3rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 1.5rem;
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+}
+
+.character-amount-container {
+  display: flex;
+  align-items: center;
+}
+
+.number-input {
+  width: 2rem;
+}
+
+.password-display {
+  align-items: center;
+  background-color: white;
+  border-radius: 0.5rem;
+  border: 2px solid #318fdd;
+  color: black;
+  display: flex;
+  height: 2rem;
+  justify-content: center;
+  padding: 1rem;
+  width: 350px;
+  word-break: break-all;
+}
+
+.btn {
+  background-color: transparent;
+  border-radius: 1rem;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  grid-column: span 2;
+  padding: 0.5rem 1rem;
+}
+
+.btn:hover {
+  background-color: #ffffff33;
+}
