@@ -1,3 +1,4 @@
+// reference the id from index.html
 const characterAmountRange = document.getElementById('characterAmountRange');
 const characterAmountNumber = document.getElementById('characterAmountNumber');
 const includeUppercaseElement = document.getElementById('includeUppercase');
@@ -6,7 +7,7 @@ const includeSymbolsElement = document.getElementById('includeSymbols');
 const passwordDisplay = document.getElementById('passwordDisplay');
 const form = document.getElementById('passwordGeneratorForm');
 
-
+//referencing the ASCII Character Code
 const UPPERCASE_CHAR_CODES = arrayFromLowToHigh(65, 90);
 const LOWERCASE_CHAR_CODES = arrayFromLowToHigh(97, 122);
 const NUMBER_CHAR_CODES = arrayFromLowToHigh(48, 57);
@@ -15,7 +16,7 @@ const SYMBOL_CHAR_CODES = arrayFromLowToHigh(33, 47)
     .concat(arrayFromLowToHigh(91, 96))
     .concat(arrayFromLowToHigh(123, 126));
 
-
+// Synchronize the slider and number input.
 characterAmountNumber.addEventListener('input', syncCharacterAmount);
 characterAmountRange.addEventListener('input', syncCharacterAmount);
 
@@ -25,6 +26,7 @@ function syncCharacterAmount(e){
     characterAmountRange.value = value;
 }
 
+// loop the array of ASCII character code.
 function arrayFromLowToHigh (low, high){
     const array = [];
     for (let i = low; i < high; i++){
@@ -33,6 +35,7 @@ function arrayFromLowToHigh (low, high){
     return array;    
 }
 
+// Funtion that will be executed after clicking the submit button.
 form.addEventListener('submit', e => {
     e.preventDefault();
 
